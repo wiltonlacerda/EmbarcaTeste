@@ -8,7 +8,7 @@
 int main(int argc, char *argv[])
 {
 
-    // Obtém uma mensagem personalizada de uma variável de ambiente
+    // Modifiquei isto aqui
     const char *mensagem = getenv("CALC_MSG");
     if (mensagem != NULL) {
         printf("%s\n", mensagem);
