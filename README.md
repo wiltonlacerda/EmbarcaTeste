@@ -3,10 +3,60 @@
   
   ### O código elaborado nessa aula foi utilizado para ensinar os conceitos básicos de Git e Github, como Commit, Pull, e Push em Github e repositório local
 
-  Read-me criado por [Thiago Sousa](https://github.com/ThiagoSousa81)
+  Read-me criado por [Thiago Sousa](https://github.com/ThiagoSousa81) e [Jônatas da Silva](http://jonatasdasilva.github.io)
+
+
 </details>
 
-<details><summary>Fatorial</summary>
+
+- <details><summary>Média</summary>
+
+  ## O código CalMediaPar.c
+
+  Na matemática, a média aritmética é o equilíbrio entre um determinado número de valores.
+
+  ### Função de cálculo da média
+
+  Supondo que suas notas no trimestre sejam, 7, 5 e 8 respectivamente. Sua média será:
+
+  $$\frac{7.0+5.0+8.0}{3}=6,6$$
+
+  ### Main
+
+  A função <code>main</code> desse programa em C realiza o cálculo da média de dois números. Ela começa exibindo uma mensagem personalizada, que pode ser configurada via variável de ambiente, de nome <code>CALC_MSG</code>. Em seguida, verifica se dois números foram passados pela linha de comando. Se não, solicita que o usuário os insira. O programa então calcula a soma e a média desses números e exibe os resultados formatados. Por fim, termina retornando 0, indicando que a execução foi bem-sucedida.
+
+  ### Melhorias
+
+  Para melhorar esse código, as seguintes alterações podem ser realizadas:
+
+  ```C
+    // main
+    double num1, num2, soma, media;
+
+    // Verifica se os argumentos foram passados
+    if (argc == 3) {
+        num1 = strtod(argv[1], NULL);
+        num2 = strtod(argv[2], NULL);
+
+        // Verifica se os argumentos são números válidos
+        if (num1 == 0 && argv[1][0] != '0' || num2 == 0 && argv[2][0] != '0') {
+            printf("Erro: Por favor, insira números válidos.\n");
+            return 1;
+        }
+    } else {
+        // Caso contrário, solicita os números ao usuário
+    }
+  ```
+
+</detail>
+
+
+
+
+
+
+
+- <details><summary>Fatorial</summary>
 
   ## O código fatorial.c
 
@@ -47,4 +97,4 @@
     printf("\n");
   ```
 
-<detail>
+</detail>
