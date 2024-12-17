@@ -10,6 +10,7 @@ int main(int argc, char *argv[])
 
     // Modifiquei isto aqui
     const char *mensagem = getenv("CALC_MSG");
+    printf("O grupo 2 é o melhor!");
     if (mensagem != NULL) {
         printf("%s\n", mensagem);
     } else {
